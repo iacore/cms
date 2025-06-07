@@ -86,7 +86,7 @@ customElements.define(
         class: "button is-secondary",
         html: [
           '<u-icon name="plus-circle"></u-icon>',
-          `Add files to ${labelify(schema.label)}`,
+          `添加文件到 ${labelify(schema.label)}`,
         ],
       }, footer);
 
