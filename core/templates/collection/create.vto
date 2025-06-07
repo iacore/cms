@@ -10,7 +10,7 @@
 
 <header class="header">
   <h1 class="header-title">
-    Creating new file
+    新建文件
     <label class="header-file">
       {{ folder }}
       <input
@@ -19,7 +19,7 @@
         type="text"
         name="_id"
         value="{{ defaults._id }}"
-        placeholder="Name your file…"
+        placeholder="文件名…"
         form="form-create"
         aria-label="File name"
         {{ if collection.documentName }}required autofocus{{ /if }}
@@ -52,6 +52,6 @@
     data-value="{{ defaults |> JSON.stringify |> escape }}"
   ></u-fields>
   <footer class="footer ly-rowStack">
-    <button class="button is-primary" type="submit">Create</button>
+    <button class="button is-primary" type="submit">创建</button>
   </footer>
 </form>

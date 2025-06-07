@@ -3,7 +3,7 @@
     version,
     links: [
       [collection.label, ["collection", collection.name]],
-      "Editing file",
+      "编辑文件",
     ],
   }
 }}
@@ -11,7 +11,7 @@
 <u-form>
   <header class="header">
     <h1 class="header-title">
-      Editing file
+      编辑文件
       <input
         class="input is-inline"
         id="_id"
@@ -54,7 +54,7 @@
     <footer class="footer ly-rowStack is-responsive">
       <button class="button is-primary" type="submit">
         <u-icon name="check"></u-icon>
-        Save changes
+        保存更改
       </button>
 
       <u-dropdown>
@@ -63,7 +63,7 @@
           href='{{ ["collection", collection.name, "code", document.name] |> path }}'
         >
           <u-icon name="code"></u-icon>
-          Edit code
+          编辑代码
         </a>
 
         {{ if collection.permissions.create }}
@@ -74,7 +74,7 @@
               formAction='{{ ["collection", collection.name, "duplicate", document.name] |> path }}'
             >
               <u-icon name="files"></u-icon>
-              Duplicate
+              创建副本
             </button>
           </u-confirm>
         {{ /if }}
@@ -87,7 +87,7 @@
               formAction='{{ ["collection", collection.name, "delete", document.name] |> path }}'
             >
               <u-icon name="trash"></u-icon>
-              Delete
+              删除
             </button>
           </u-confirm>
         {{ /if }}
